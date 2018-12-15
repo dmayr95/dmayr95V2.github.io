@@ -1,0 +1,41 @@
+
+@import "nav.css";
+@import "link.css";
+@import "footer.css";
+@import "sections.css";
+@import "header.css";
+@import "form.css";
+@import "profil.css";
+@import "img.css";
+@import "text.css";
+@import "blocks.css";
+
+*{
+    max-width: 100vw;
+    margin:0;
+}
+
+body{
+    background-color:#bdc3c7;
+    font-family: 'Raleway', Arial, Verdana;
+    font-size: 17px;
+    max-height: 2000px;
+}
+
+
+img{
+    max-width: 100%;
+}
+
+
+h2{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,8 @@
+footer{
+margin-top:50px;
+padding-top:20px;
+display:grid;
+justify-items:center;
+align-items:center;
+border-top:solid 2px black;
+}

@@ -1,0 +1,166 @@
+﻿<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Ein Portfolio von Damir Markovic für eine Bewerbung">
+    <meta name="keywords" content="Portfolio, job, bewerbung, Damir, Markovic">
+    <meta name="author" content="Damir Markovic">
+    <meta name="viewport" content="width=device-width">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <title>Portfolio - Damir Markovic</title>
+    <script src="js/scroll.js"></script>
+</head>
+
+<body id="body" onscroll="scrollpos()">
+<header>
+    <nav id="nav-bar">
+        <div id="logoContainer">
+            <img id="logo" src="images/dm_Logo_v2.png" alt="logo">
+            <a href="#top" id="logoText" >Recent Deisgns</a>
+        </div>
+        <ul id="nav-links">
+            <li><a href="#websites" name="Website">Websites</a>
+            </li>
+            <li><a href="#zweiD" name="Zwei D Animation">2D-Animationen</a></li>
+            <li><a href="#dreiD" name="Drei D Design">3D-Design</a></li>
+        </ul>
+    </nav>
+    <div id="mainHeaderText">
+        <h1>Recent Designs hat es sich zur Aufgabe gestellt individuelle Websites für jedermann zur verfügung zu stellen</h1>
+        <hr class="hr">
+        <h2 id="mainHeaderText_Sub">Unser Team hat sich auf kleine und Preiswerte Webauftritte spezialisiert</h2>
+    </div>
+        <div id="header-image-container">
+    </div>
+</header>
+
+
+<main>
+        <section class="wrapper">
+            <div class="section-background" id="technology-background"></div>
+            <h2 class="header-text">Technologien die bei uns zum Einsatz kommen</h2>
+           <div class="block-klasse" id="blocks-content-html">
+               <div class="text-container">
+                   <figure>
+                       <img src="images/html.png" alt="HTML-Logo">
+                   </figure>
+                   <h2>HTML5</h2>
+                   <p>ist die fünfte Fassung der Hypertext Markup Language (engl. für Hypertext-Auszeichnungssprache), einer Computersprache zur Auszeichnung und Vernetzung von Texten und anderen Inhalten elektronischer Dokumente, vorwiegend im World Wide Web.</p>
+                </div>
+           </div>
+
+            <div class="block-klasse" id="blocks-content-css">
+                <div class="text-container">
+                    <figure>
+                        <img src="images/css.png" alt="HTML-Logo">
+                    </figure>
+                    <h2>CSS3</h2>
+                    <p>ber CSS3 kann ein modernes Webdesign erstellt werden. Es spart dem Entwickler viel Arbeit, da bisher erstellte Grafiken, in vielen Fällen nicht mehr notwendig sind. Auch Schatten von Schriften und Bereichen, sind im Handumdrehen erstellt.</p>
+                 </div>
+            </div>
+
+            <div class="block-klasse" id="blocks-content-javascript">
+                <div class="text-container">
+                    <figure>
+                        <img src="images/javascript.png" alt="HTML-Logo">
+                    </figure>
+                    <h2>JavaScript</h2>
+                    <p>(kurz JS) ist eine Skriptsprache, die ursprünglich 1995 von Netscape für dynamisches HTML in Webbrowsern entwickelt wurde, um Benutzerinteraktionen auszuwerten, Inhalte zu verändern, nachzuladen oder zu generieren und so die Möglichkeiten von HTML und CSS zu erweitern.</p>
+                 </div>
+            </div>
+        </section>
+
+
+
+    <section class="wrapper" id="copyright">
+        <div class="section-background"></div>
+        <h2 class="header-text">Technologien die bei uns zum Einsatz kommen</h2>
+        <div class="block-klasse">
+            <div class="text-container">
+                <figure>
+                    <img src="images/html.png" alt="HTML-Logo">
+                </figure>
+                <h2>HTML5</h2>
+                <p>ist die fünfte Fassung der Hypertext Markup Language (engl. für Hypertext-Auszeichnungssprache), einer Computersprache zur Auszeichnung und Vernetzung von Texten und anderen Inhalten elektronischer Dokumente, vorwiegend im World Wide Web.</p>
+            </div>
+        </div>
+
+    </section>
+
+        <section id="dreiD">
+            <h2>3D - Art</h2>
+            <img src="images/rubik3.jpg" alt="3D-Design">
+        </section>
+    <br>
+
+    <section id="form-wrapper">
+        <h2>Kontaktformular</h2>
+
+        <form id="formular" enctype="application/x-www-form-urlencoded" action="mailto:damirmarkovic13@yahoo.com" method="post">
+
+            <fieldset>
+            <div class="form-row">
+	    <label for="vorname">Vorname: </label>
+            <input name="vorname" id="vorname" type="text" placeholder="Vorname" required>
+	    </div>
+	
+	    <div class="form-row">
+            <label for="nachname">Nachname: </label>
+            <input name="nachname" id="nachname" type="text" placeholder="Nachname" required>
+            </div>
+ 	    </fieldset>
+
+            <fieldset>
+	    <div class="form-row">
+            <label for="email">E-Mail-Adresse: </label>
+            <input name="email" id="email" type="email" placeholder="information@info.com">
+	    </div>
+	
+	    <div class="form-row">
+            <label for="webadresse">Web-Adresse: </label>
+            <input name="webadresse" id="webadresse" type="url" placeholder="https://www.google.com/">
+            </div>
+	    </fieldset>
+
+             <fieldset id="tel">
+	    <div class="form-row">
+            <label for="telefon">Telefonnummer: </label>
+            <input name="telefon" id="telefon" type="tel" placeholder="06767588898">
+            </div>
+	    </fieldset>
+
+            <fieldset id="kom">
+	    <div class="form-row">
+            <label id="comment-label" for="comment">Kommentar: </label>
+            <input name="kommentare" id="comment" type="text" placeholder="Kommentare" required>
+            </div>
+	    </fieldset>
+
+            <fieldset id="subre">
+
+            <input name="abschicken" id="submit" type="submit">
+
+            <input name="zurücksetzen" id="reset" type="reset">
+            </fieldset>
+
+        </form>
+
+    </section>
+
+</main>
+
+<footer>
+    <h3>Impressum</h3>
+        <address>
+        Damir Markovic<br>
+        Lainzer Strasse 118<br>
+        1120<br>
+        Wien<br>
+        Österreich<br>
+
+        <br>
+    </address>
+</footer>
+</body>
+</html>
