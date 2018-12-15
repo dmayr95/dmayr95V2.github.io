@@ -5,13 +5,15 @@ margin-top:40px;
 }
 
 #dreiD{
-    margin-top:40px;
+    background-color: #000000;
+    z-index: 4;
+    margin-bottom: -4px;
 }
 
-@media(max-width:600px){
-    #zweiD{
-        padding:20px;
-    }
+#dreiD h2{
+    margin: 0px;
+    paddding:10px;
+    color:#ffffff;
 }
 
 #websites{
@@ -60,24 +62,13 @@ padding-bottom: 20px;
     align-self: center;
 }
 
-@media(max-width:550px){
-    .pro100 figure{
-        grid-column: 1/7;
-    }
-}
-
-@media(max-width:620px){
-    #website-text{
-    grid-column: 1/7;
-    }
-}
-
 .wrapper{
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     position: relative;
     overflow: hidden;
     min-height: 1000px;
+    z-index: 2;
 }
 
 .section-background{
@@ -100,3 +91,20 @@ padding-bottom: 20px;
     color:#000 !important;
 }
 
+@media(max-width:600px){
+    #zweiD{
+        padding:20px;
+    }
+}
+
+@media(max-width:550px){
+    .pro100 figure{
+        grid-column: 1/7;
+    }
+}
+
+@media(max-width:620px){
+    #website-text{
+        grid-column: 1/7;
+    }
+}
