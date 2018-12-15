@@ -12,7 +12,7 @@
     <script src="js/scroll.js"></script>
 </head>
 
-<body id="body" onscroll="scrollpos()">
+<body id="body" onscroll="scrollpos()" onload="getScreenWidth()">
 <header>
     <nav id="nav-bar">
         <div id="logoContainer">
@@ -20,11 +20,17 @@
             <a href="#top" id="logoText" >Recent Deisgns</a>
         </div>
         <ul id="nav-links">
-            <li><a href="#websites" name="Website">Websites</a>
+            <li><a href="#technology" name="technology">Technologien</a>
             </li>
             <li><a href="#technology" name="technology">Technologien</a></li>
             <li><a href="#dreiD" name="Drei D Design">3D-Design</a></li>
         </ul>
+        <div id="menu-button" onclick="showMenu()">
+            <hr id="null-button-line">
+            <hr id="first-button-line">
+            <hr id="second-button-line">
+            <hr id="third-button-line">
+        </div>
     </nav>
     <div id="mainHeaderText">
         <h1>Recent Designs hat es sich zur Aufgabe gestellt individuelle Websites für jedermann zur verfügung zu stellen</h1>
