@@ -4,7 +4,7 @@
 }
 
 #mainHeaderText:hover {
-    transform: scale(1.1);
+    transform: scale(1.02);
     cursor: none;
     padding: 40px;
     background-color: rgba(0, 0, 0, 0.2);
@@ -38,39 +38,11 @@ hr{
     }
 }
 
-@media(min-width:1200px){
-    #mainHeaderText{
-        padding:0px 100px;
-    }
-}
-@media(min-width:1400px){
-    #mainHeaderText{
-        grid-column: 2/5;
-        padding:0px 10px;
-    }
-}
-
-header{
-    display:grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    background-color: #ffffff;
-    min-height:100vh;
-    overflow: hidden;
-    height: 500px;
-}
-
 #logoText{
     grid-column: 1/5;
     margin-left:45px;
     align-self: center;
     grid-row: 1/2;
-}
-
-@media(max-width:600px){
-    #logoText{
-        display:none;
-    }
 }
 
 #logoContainer{
@@ -94,14 +66,43 @@ header{
                     rgba(0, 0, 5, 0.4)
             ),
             url(../images/main_webdesign.jpg);
-    background-attachment: fixed;
+
+    position: fixed;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
 }
 
-/*
-#header-image-container:hover{
-transform: scale(1.1);
+@media(min-width:1200px){
+    #mainHeaderText{
+        padding:0px 100px;
+    }
 }
-*/
+@media(min-width:1400px){
+    #mainHeaderText{
+        grid-column: 2/5;
+        padding:0px 10px;
+    }
+}
+
+header{
+    display:grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    min-height:100vh;
+    overflow: hidden;
+    height: 500px;
+}
+
+@media(max-width:600px){
+    #logoText{
+        display:none;
+    }
+}
 
 
 
