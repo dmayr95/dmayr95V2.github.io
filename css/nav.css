@@ -1,6 +1,7 @@
 #first-button-line{
     transition: 0.6s;
 }
+
 #third-button-line{
     transition: 0.6s;
 }
@@ -76,6 +77,7 @@ ul{
         grid-template-rows: repeat(5, 1fr);
     }
     #menu-button hr{
+        border:0;
         background: rgba(0,0,0,0.5);
         height: 2px;
         align-self: center;
