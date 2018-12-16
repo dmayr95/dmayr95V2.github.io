@@ -1,26 +1,3 @@
-
-#zweiD{
-    padding:70px;
-margin-top:40px;
-}
-
-#dreiD{
-    background-color: #000000;
-    z-index: 4;
-    margin-bottom: -4px;
-}
-
-#dreiD h2{
-    margin: 0px;
-    paddding:10px;
-    color:#ffffff;
-}
-
-#websites{
-    display:grid;
-    grid-template-columns: repeat(6,1fr);
-}
-
 .pro100{
     grid-column: 1/7;
     display: grid;
@@ -31,43 +8,13 @@ margin-top:40px;
     grid-column: 2/6;
 }
 
-#website-first{
-    background-color:#f2f3f5;
-    grid-row: 2/6;
-}
-
-#website-second{
-    background-color:#000;
-    grid-row: 6/10;
-}
-
-#website-third{
-    background-color:#fff;
-    grid-row: 10/14;
-}
-
-#website-fourth{
-    background-color:#b5cadb;
-    grid-row: 14/18;
-}
-
-#websites img{
-    width:100%;
-    max-width:100%;
-}
-
-#website-text{
-padding-bottom: 20px;
-    grid-column: 2/6;
-    align-self: center;
-}
-
 .wrapper{
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     position: relative;
     overflow: hidden;
     min-height: 1000px;
+    height: 100vh;
     z-index: 2;
 }
 
