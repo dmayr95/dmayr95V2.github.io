@@ -12,11 +12,39 @@
     background-size: cover;
 }
 
-#webdeign-content{
+#webdesign-content{
+    grid-row: 2/8;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(4, 1fr);
-    padding:0px;
     width: 100%;
     grid-column: 2/8;
+    text-align: center;
+    padding: 15px 15px 50px 15px;
+    background-color: rgba(230, 230, 230, 0.98);
+    justify-self: center;
+    transition: 0.7s;
+    line-height: 160%;
+    color: #000000;
+    min-width: 250px;
+    grid-row-start: 2;
+    overflow: auto;
+}
+
+#webdesign-image-container{
+    grid-column: 1/4;
+    grid-row: 1/4;
+}
+
+#webdesign-text-container{
+    grid-column: 4/8;
+    grid-row: 1/5;
+}
+#webdesign-section{
+    grid-template-rows: repeat(8, 1fr);
+}
+
+#webdesign-text-container h2{
+    margin-top: 20px;
 }
