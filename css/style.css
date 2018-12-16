@@ -8,7 +8,10 @@
 @import "profil.css";
 @import "img.css";
 @import "text.css";
-@import "blocks.css";
+@import "technology.css";
+@import "price.css";
+@import "webdesign.css";
+@import "copyright.css";
 
 *{
     max-width: 100vw;
@@ -26,15 +29,17 @@ body{
     max-height: 2000px;
 }
 
-
 img{
     max-width: 100%;
 }
 
-
 h2{
     margin-top: 5px;
     margin-bottom: 5px;
+}
+
+h1{
+    padding: 20px;
 }
 
 
