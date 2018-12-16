@@ -15,7 +15,7 @@
 
 #mainHeaderText{
     transition: 1s;
-    z-index: 20;
+
     text-align: center;
     grid-column: 1/6;
     grid-row: 2;
