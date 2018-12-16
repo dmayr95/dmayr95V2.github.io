@@ -1,0 +1,22 @@
+
+#webdesign-background{
+    background:
+            linear-gradient(
+                    rgba(0, 0, 0, 1),
+                    rgba(0, 0, 0, 0.5)
+            ),
+            url("../images/konzept-hintergrund.jpg");
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#webdeign-content{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    padding:0px;
+    width: 100%;
+    grid-column: 2/8;
+}
