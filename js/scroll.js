@@ -12,7 +12,7 @@ function scrollpos() {
     let navbar = document.getElementById("nav-bar");
     let links = document.getElementById("nav-links");
 
-    if(screenWidth > 700){
+    if(screenWidth > 850){
         if(top >= position){
             navbar.style.cssText = "width:230px;";
             links.style.cssText = "display:none;";
