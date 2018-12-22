@@ -9,6 +9,7 @@
             url("../images/html-code-scharf.jpg");
     background-attachment: fixed;
     background-position: center center;
+    background-size: cover;
 }
 
 .block-klasse img{
@@ -77,7 +78,6 @@ url("../images/html-code-scharf.jpg");
         margin: 5px !important;
     }
     .wrapper {
-        height: 2500px;
         grid-template-rows: repeat(6, 1fr);
     }
     .block-klasse{
