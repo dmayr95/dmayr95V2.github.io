@@ -1,35 +1,34 @@
 
 #webdesign-background{
     background:
-            linear-gradient(
-                    rgba(0, 0, 0, 1),
-                    rgba(0, 0, 0, 0.5)
-            ),
-            url("../images/konzept-hintergrund.jpg");
+            linear-gradient(#ed1164aa,#ed1164aa),
+            url("../images/webdesign.jpg");
     background-position: center center;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
+    height: 250px;
 }
 
 #webdesign-content{
-    grid-row: 2/8;
+    margin-top:180px;
+    grid-row: 1/8;
     display: grid;
     grid-gap: 20px;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(4, 1fr);
     width: 100%;
     grid-column: 2/8;
-    text-align: center;
+    /*! text-align: center; */
     padding: 15px 15px 50px 15px;
-    background-color: rgba(230, 230, 230, 0.98);
+    /*! background-color: rgba(230, 230, 230, 0.98); */
     justify-self: center;
     transition: 0.7s;
     line-height: 160%;
     color: #000000;
     min-width: 250px;
-    grid-row-start: 2;
     overflow: auto;
+    height: auto;
 }
 
 #webdesign-image-container{
@@ -38,13 +37,95 @@
 }
 
 #webdesign-text-container{
-    grid-column: 4/8;
+    margin: 80px 0px; 
+    overflow: hidden;
+    text-align: left;
+    grid-column: 4/9;
     grid-row: 1/5;
+    color:#ffffff;
 }
 #webdesign-section{
+    height:auto;
     grid-template-rows: repeat(8, 1fr);
+    background-color:#222222;
 }
 
-#webdesign-text-container h2{
-    margin-top: 20px;
+#webdesign-section #h2Webdesign{ 
+    grid-column: 2/8;
+    grid-row: 1/3;
 }
+
+#webdesignButton ul{
+    margin-bottom: 40px ;
+    text-align: center;
+    display: flex;
+}
+
+#webdesignButton ul li:hover{
+    background-color: rgba(255, 255,255,0.4);
+}
+
+#webdesignButton ul li{
+    color:#fff;
+    cursor: pointer;
+    border: #ffffff 2px solid;
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin-left: 30px;
+    background-color: rgba(80, 80,80,0.7);
+}
+
+@media((min-width:0px) and (max-width:700px)){
+    #webdesign-content{
+        margin-top:0px;
+    }
+    #webdesign-image-container{
+        margin-top: 10px;
+        justify-self: center;
+        align-self: center;
+        grid-column: 2/8;
+        grid-row: 1/2;
+    }
+    #webdesign-text-container{
+        padding:20px;
+        grid-row:2/5;
+        grid-column: 1/9;
+    }
+    #webdesign-content {
+        grid-column:1/9;
+    }
+        #webdesign-section #h2Webdesign{  
+        grid-row:2/4;
+            grid-column: 1/9;
+    }
+    #webdesignButton ul{
+        display: block;
+    }
+    #webdesignButton ul li{
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+}
+
+@media((min-width:700px) and (max-width:1100px)){
+        #webdesign-text-container{
+        margin-top:30px;
+        grid-row:2/5;
+        grid-column: 1/9;
+    }
+    #webdesign-section #h2Webdesign{  
+        margin-right: 150px;
+        justify-self: right;
+        grid-row:3/4;
+    }
+}
+
+
+
+
+
+
+
+
+
+
