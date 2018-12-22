@@ -4,7 +4,6 @@
 }
 
 #mainHeaderText:hover {
-    transform: scale(1.02);
     cursor: none;
     padding: 40px;
     background-color: rgba(0, 0, 0, 0.2);
@@ -15,7 +14,6 @@
 
 #mainHeaderText{
     transition: 1s;
-
     text-align: center;
     grid-column: 1/6;
     grid-row: 2;
