@@ -16,6 +16,7 @@ let webdesignAbsatz1 = document.getElementById("webdesignAbsatz1");
 let webdesignAbsatz2 = document.getElementById("webdesignAbsatz2");
 let webdesignAbsatz3 = document.getElementById("webdesignAbsatz3");
 let webdesignImage = document.getElementById("webdesignImage");
+let h2Webdesign = document.getElementById("h2Webdesign");
 
 bodyResize.addEventListener("resize", getScreenWidth);
 
@@ -34,6 +35,7 @@ function switchContainer(event){
     console.log(zeit);
 
 let buttonId = event.target.id;
+
     switch (buttonId) {
         case vorbereitung.id:
         case vorbereitungH2.id:
@@ -67,8 +69,8 @@ function switchText(){
             webdesignZwischenUS2.textContent  = "Briefing";
             webdesignZwischenUS3.textContent  = "Konzept";
 
-            webdesignAbsatz1.textContent  = "Nicht immer ist die Analyse notwendig, doch wenn es sich um das Redesign einer bestehenden Website handelt oder es um das Beurteilen der Websites der Konkurrenz geht, ist diese sehr praktisch.";
-            webdesignAbsatz2.textContent  = "Das Briefing bildet den Ausgangspunkt von allem. Hier lernt man das Projekt kennen, Ziele und Zielpublikum werden definiert. Je genauer man es macht desto mehr Ärger und Fragen erspart man sich später im Prozess.";
+            webdesignAbsatz1.textContent  = "Nicht immer ist die Analyse notwendig, doch wenn es sich um das Redesign einer bestehenden Website handelt oder es um das Beurteilen der Websites der Konkurrenz geht, ist diese sehr praktisch. blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla";
+            webdesignAbsatz2.textContent  = "Das Briefing bildet den Ausgangspunkt von allem. Hier lernt man das Projekt kennen, Ziele und Zielpublikum werden definiert. Je genauer man es macht desto mehr Ärger und Fragen erspart man sich später im Prozess. blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla";
             webdesignAbsatz3.textContent  = "Nach einem ausführlichen Briefing mit klarer Zieldefinition kann man sich an die Konzeption der Seite machen. Hier werden der Aufbau der Website mittels einer Sitemap, die Navigationsstruktur, Seitenelemente und Contentarten definiert. Das ganze wird mittels Mockups schematisch skizziert.";
             break;
         case 2:
@@ -76,7 +78,7 @@ function switchText(){
 
             //waaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaassssss
 
-            document.getElementById("webdesignImage").src = "/imagges/design.png";
+            document.getElementById("webdesignImage").src = "/images/design.png";
             webdesignUberschrift.textContent  = "Design";
 
             webdesignZwischenUS1.textContent  = "Contenterstellung";
@@ -104,13 +106,16 @@ function switchText(){
 }
 
 function changeToVorbereitung(zeit){
-    content.style.cssText = "transform: translate(-100%,0);";
+    h2Webdesign.style.cssText = "transform: translate(-150%,0);";
+    content.style.cssText = "transform: translate(-150%,0);";
     setTimeout(function () {
-        content.style.cssText = "transition:0s; transform: translate(110%,0);";
+        content.style.cssText = "transition:0s; transform: translate(150%,0);";
+        h2Webdesign.style.cssText = "transition:0s; transform: translate(150%,0);";
 
     }, zeit);
     setTimeout(function () {
         content.style.cssText = "transition:0.3s; transform: translate(0,0);";
+        h2Webdesign.style.cssText = "transition:0.7s; transform: translate(0,0);";
         switchText();
     }, zeit+100);
 }
