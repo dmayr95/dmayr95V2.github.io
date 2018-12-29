@@ -9,7 +9,25 @@
     <link href="css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <title>Portfolio - Damir Markovic</title>
-    <script src="js/scroll.js"></script>
+    <script src="js/scroll.js"></script>   <style type="text/css">
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    #slider-container{
+        overflow:hidden;
+        height: 100%;
+        width:100vw;
+        margin: auto;
+    }
+    #slider-images{
+        display: flex;
+        height: inherit;
+        width: 100%;
+    }
+
+</style>
 </head>
 
 <body id="body" onresize="menuResize()" onscroll="scrollpos()" onload="getScreenWidth()">
@@ -37,18 +55,22 @@
         <hr class="hr">
         <h2 id="mainHeaderText_Sub">Unser Team hat sich auf kleine und Preiswerte Webauftritte spezialisiert</h2>
     </div>
-        <div id="header-image-container"></div>
+        <div id="header-image-container"></div><div id="slider-container">
+    <div id="slider-images">
+        <!--filled with javascript-->
+    </div>
+</div>
 </header>
 
 <main>
 
 
     <section id="webdesign-section" class="wrapper">
-        <h2 class="header-text" id="h2Webdesign">Wie entsteht Ihre Website?</h2>
         <div class="section-background" id="webdesign-background"></div>
 
         <div id="webdesign-content">
             <div id="webdesign-text-container">
+                <h2 class="header-text" id="h2Webdesign">Wie entsteht Ihre Website?</h2>
                 <div id="webdesignButton">
                     <ul>
                         <li class="crationButton" id="vorbereitungButtonID"><h3 id="vorbereitungH2">1. Vorbereitung</h3></li>
@@ -58,13 +80,13 @@
                 </div>
                 <h2 id="webdesignUberschrift">Vorbereitung</h2>
                 <h3 id="webdesignZwischenUS1">Design</h3>
-                <p id="webdesignAbsatz1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur corporis, cupiditate dolore doloremque exercitationem illo in ipsa ipsam, maiores nulla praesentium quae sint tempora, tempore voluptate! Consectetur itaque natus nesciunt?</p>
+                <p id="webdesignAbsatz1">Nicht immer ist die Analyse notwendig, doch wenn es sich um das Redesign einer bestehenden Website handelt oder es um das Beurteilen der Websites der Konkurrenz geht, ist diese sehr praktisch. blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla.</p>
                  <br>
                 <h3 id="webdesignZwischenUS2">Umsetzung</h3>
-                <p id="webdesignAbsatz2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur corporis, cupiditate dolore doloremque exercitationem illo in ipsa ipsam, maiores nulla praesentium quae sint tempora, tempore voluptate! Consectetur itaque natus nesciunt?</p>
+                <p id="webdesignAbsatz2">Das Briefing bildet den Ausgangspunkt von allem. Hier lernt man das Projekt kennen, Ziele und Zielpublikum werden definiert. Je genauer man es macht desto mehr Ärger und Fragen erspart man sich später im Prozess. blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla</p>
                 <br>
                 <h3 id="webdesignZwischenUS3">Umsetzung</h3>
-                <p id="webdesignAbsatz3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur corporis, cupiditate dolore doloremque exercitationem illo in ipsa ipsam, maiores nulla praesentium quae sint tempora, tempore voluptate! Consectetur itaque natus nesciunt?</p>
+                <p id="webdesignAbsatz3">Nach einem ausführlichen Briefing mit klarer Zieldefinition kann man sich an die Konzeption der Seite machen. Hier werden der Aufbau der Website mittels einer Sitemap, die Navigationsstruktur, Seitenelemente und Contentarten definiert. Das ganze wird mittels Mockups schematisch skizziert.</p>
             </div>
             <div id="webdesign-image-container">
                 <figure>
@@ -137,7 +159,7 @@
 	    <label for="vorname">Vorname: </label>
             <input name="vorname" id="vorname" type="text" placeholder="Vorname" required>
 	    </div>
-	
+
 	    <div class="form-row">
             <label for="nachname">Nachname: </label>
             <input name="nachname" id="nachname" type="text" placeholder="Nachname" required>
@@ -149,7 +171,7 @@
             <label for="email">E-Mail-Adresse: </label>
             <input name="email" id="email" type="email" placeholder="information@info.com">
 	    </div>
-	
+
 	    <div class="form-row">
             <label for="webadresse">Web-Adresse: </label>
             <input name="webadresse" id="webadresse" type="url" placeholder="https://www.google.com/">
@@ -195,9 +217,8 @@
         <br>
     </address>
 </footer>
-
+<script src="js/slider.js"></script>
 <script src="js/menu.js"></script>
-<script src="js/mail.js"></script>
 <script src="js/changeTextWebdesign.js"></script>
 
 </body>
